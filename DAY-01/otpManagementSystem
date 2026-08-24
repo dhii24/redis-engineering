@@ -1,0 +1,51 @@
+const { createClient } = require("redis");
+
+const client = createClient();
+
+client.on("error", (err) => {
+console.log("Redis error:", err);
+})
+
+async function otpManagementSystem(){
+
+    try{
+        await client.connect()
+        console.log("Client Connected\n");
+
+        await client.set("otp:user101", "845921", {
+            EX: 300
+        });
+
+        console.log("OTP stored successfully");
+        console.log("OTP expiration set to 300 seconds");
+
+        let ttl = await client.ttl("otp:user101")
+        console.log(`Current TTL: ${ttl} seconds\n`);
+        
+        await client.persist("otp:user101");
+
+        console.log("OTP expiration removed using PERSIST");
+        
+        ttl = await client.ttl("otp:user101")
+        console.log(`Current TTL after PERSIST: ${ttl} seconds`);
+        console.log("   (-1 means the key has no expiration)\n");
+        
+        await client.expire("otp:user101", 120);
+        console.log("OTP expiration set again to 120 seconds");
+        
+        ttl = await client.ttl("otp:user101")
+        console.log(`Current TTL after EXPIRE: ${ttl} seconds`);
+    }
+
+    catch(error){
+        console.error(error);
+    }
+
+    finally{
+            if(client.isOpen){
+                await client.quit();
+                console.log("\nRedis client disconnected");
+            }
+    }
+}
+otpManagementSystem();
