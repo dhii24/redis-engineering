@@ -1,0 +1,21 @@
+# Redis Engineering
+
+A daily hands-on Redis learning journey focused on building practical backend engineering challenges.
+
+## Topics
+
+- Redis Data Types
+- TTL & Expiration
+- Caching
+- Pub/Sub
+- Queues
+- Rate Limiting
+- Distributed Systems Concepts
+
+## Progress
+
+| Day | Challenge | Concepts |
+|---|---|---|
+| 01 | OTP Management System | TTL, EXPIRE, PERSIST |
+
+More challenges will be added as I learn and implement new Redis concepts.
