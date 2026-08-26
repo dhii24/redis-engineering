@@ -17,5 +17,6 @@ A daily hands-on Redis learning journey focused on building practical backend en
 | Day | Challenge | Concepts |
 |---|---|---|
 | 01 | OTP Management System | TTL, EXPIRE, PERSIST |
+| 02 | Bank Transfer System | MULTI, EXEC, WATCH |
 
 More challenges will be added as I learn and implement new Redis concepts.
