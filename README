@@ -1,22 +1,28 @@
 # Redis Engineering
 
-A daily hands-on Redis learning journey focused on building practical backend engineering challenges.
+A daily hands-on Redis learning journey focused on building practical backend engineering challenges and understanding how Redis is used in real-world backend systems.
 
 ## Topics
 
-- Redis Data Types
-- TTL & Expiration
-- Caching
-- Pub/Sub
-- Queues
-- Rate Limiting
-- Distributed Systems Concepts
+* Redis Data Types
+* TTL & Expiration
+* Caching
+* Pipelines
+* Pub/Sub
+* Queues
+* Rate Limiting
+* Distributed Systems Concepts
 
 ## Progress
 
-| Day | Challenge | Concepts |
-|---|---|---|
-| 01 | OTP Management System | TTL, EXPIRE, PERSIST |
-| 02 | Bank Transfer System | MULTI, EXEC, WATCH |
+| Day | Challenge                 | Concepts                 |
+| --- | ------------------------- | ------------------------ |
+| 01  | OTP Management System     | TTL, EXPIRE, PERSIST     |
+| 02  | Bank Transfer System      | MULTI, EXEC, WATCH       |
+| 03  | Product Bulk Cache System | Pipelines, Batching, TTL |
 
 More challenges will be added as I learn and implement new Redis concepts.
+
+## Goal
+
+Build consistently, understand the underlying concepts, and document practical Redis implementations through hands-on coding.
