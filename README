@@ -15,11 +15,12 @@ A daily hands-on Redis learning journey focused on building practical backend en
 
 ## Progress
 
-| Day | Challenge                 | Concepts                 |
-| --- | ------------------------- | ------------------------ |
-| 01  | OTP Management System     | TTL, EXPIRE, PERSIST     |
-| 02  | Bank Transfer System      | MULTI, EXEC, WATCH       |
-| 03  | Product Bulk Cache System | Pipelines, Batching, TTL |
+| Day | Challenge                 | Concepts                        |
+| --- | ------------------------- | ------------------------------- |
+| 01  | OTP Management System     | TTL, EXPIRE, PERSIST            |
+| 02  | Bank Transfer System      | MULTI, EXEC, WATCH              |
+| 03  | Product Bulk Cache System | Pipelines, Batching, TTL        |
+| 04  | API Rate Limiter          | INCR, EXPIRE, Atomic Operations |
 
 More challenges will be added as I learn and implement new Redis concepts.
 
