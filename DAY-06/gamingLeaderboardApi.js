@@ -51,3 +51,9 @@ async function main(){
 }
 
 main();
+
+
+
+const above = await client.zRange("leaderboard:global", Math.max(0, rank-5), rank-1, {REV: true});
+
+const below = await client.zRange("leaderboard:global", rank+1, rank+5, {REV: true});
