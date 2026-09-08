@@ -25,6 +25,7 @@ A daily hands-on Redis learning journey focused on building practical backend en
 | 06  | Gaming Leaderboard API            | ZADD, ZRANGE, ZSCORE, ZREVRANK, ZINCRBY                  |
 | 07  | Product Cache Aside System        | GET, SET, EX, Cache HIT/MISS, Cache-Aside                |
 | 08  | Dynamic Product Cache System      | GET, SET, DEL, EX, Cache Hit/Miss, Cache-Aside           |
+| 09  | Product Cache Invalidation System | GET, SET, DEL, EX, Cache-Aside, Cache Invalidation       |
 
 More challenges will be added as I learn and implement new Redis concepts.
 
