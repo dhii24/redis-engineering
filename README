@@ -27,6 +27,7 @@ A daily hands-on Redis learning journey focused on building practical backend en
 | 08  | Dynamic Product Cache System          | GET, SET, DEL, EX, Cache Hit/Miss, Cache-Aside           |
 | 09  | Product Cache Invalidation System     | GET, SET, DEL, EX, Cache-Aside, Cache Invalidation       |
 | 10  | Express API Response Cache Middleware | Express Middleware, Redis GET/SET, TTL, Cache HIT/MISS, Cache Invalidation |
+| 11  | Redis Pub/Sub Notification System     | PUBLISH, SUBSCRIBE, Pub/Sub, Event-Driven Architecture   |
 
 More challenges will be added as I learn and implement new Redis concepts.
 
